@@ -1,0 +1,30 @@
+{
+  "name": "scraper",
+  "version": "1.0.0",
+  "description": "MongoDB/Mongoose Homework - News Scraper",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/audreyf72/Scraper.git"
+  },
+  "keywords": [
+    "mongo"
+  ],
+  "author": "Audrey Fernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/audreyf72/Scraper/issues"
+  },
+  "homepage": "https://github.com/audreyf72/Scraper#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^5.2.9",
+    "request": "^2.88.0"
+  }
+}
