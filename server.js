@@ -11,6 +11,7 @@ var Note = require("./models/Note.js");
 var Article = require("./models/Article.js");
 
 // Our scraping tools
+var axios = require("axios");
 var request = require("request");
 var cheerio = require("cheerio");
 
@@ -90,7 +91,7 @@ app.get("/saved", function(req, res) {
 //GET route to scrape news site
 app.get("/scrape", function(req, res) {
   // First, we grab the body of the html with request
-  request("https://www.nytimes.com/", function(error, response, html) {
+  axios.get("https://www.nytimes.com/", function(error, response, html) {
     // Then, we load that into cheerio and save it to $ for a shorthand selector
     var $ = cheerio.load(html);
     // Now, we grab every h2 within an article tag, and do the following:
