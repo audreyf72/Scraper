@@ -21,7 +21,7 @@ var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoScraper";
 // Connect to the Mongo DB
 mongoose.Promise = Promise;
 mongoose.connect(MONGODB_URI, {
-  useMongoClient: true
+  useNewUrlParser: true
 });
 
 var db = mongoose.connection;
@@ -251,7 +251,7 @@ app.delete("/notes/delete/:note_id/:article_id", function(req, res) {
           }
           else {
             // Or send the note to the browser
-            res.send("Note Deleted");
+            res.send("Comment Deleted");
           }
         });
     }

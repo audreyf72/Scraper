@@ -6,7 +6,7 @@
             <div class="modal-header">
                 <!-- Button -->
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Notes for {{this.title}}</h4>
+                <h4 class="modal-title">Comments for {{this.title}}</h4>
             </div>
             <div class="modal-body">
                 {{#if this.notes}}
@@ -15,24 +15,24 @@
                             <div class="panel-body">
                                 <p class="previousNotes"> {{this.body}}</p>
                                 <!-- Button -->
-                                <button type="button" class="btn btn-primary deleteNote" data-note-id={{this._id}} data-article-id={{this.article}}>X</button>
+                                <button type="button" class="btn btn-danger deleteNote" data-note-id={{this._id}} data-article-id={{this.article}}>Delete</button>
                             </div>
                         </div>
                     {{/each}}
                 {{else}}
                     <div class="panel panel-default">
                         <div class="panel-body">
-                            <h4>No notes for this article yet.</h4>
+                            <h4>No comments for this article yet.</h4>
                         </div>
                     </div>
                 {{/if}}
                 <div class="form-group">
-                    <textarea id="noteText{{this._id}}" class="form-control" rows="4" placeholder="New Note"></textarea>
+                    <textarea id="noteText{{this._id}}" class="form-control" rows="4" placeholder="New Comment"></textarea>
                 </div>
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default saveNote" data-id={{this._id}}>Save Note</button>
+                <button type="button" class="btn btn-default saveNote" data-id={{this._id}}>Save Comment</button>
             </div>
         </div>
     </div>
