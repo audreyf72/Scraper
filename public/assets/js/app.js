@@ -2,7 +2,7 @@
 $("#scrape").on("click", function() {
     $.ajax({
         method: "GET",
-        url: "/scrape",
+        url: "/scrape"
     }).done(function(data) {
         console.log(data)
         window.location = "/"
@@ -10,8 +10,8 @@ $("#scrape").on("click", function() {
 });
 
 //Set clicked nav option to active
-$(".navbar-nav li").click(function() {
-   $(".navbar-nav li").removeClass("active");
+$("#leftMenu a").click(function() {
+   $("#leftMenu a").removeClass("active");
    $(this).addClass("active");
 });
 

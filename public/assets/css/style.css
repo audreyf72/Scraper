@@ -1,6 +1,7 @@
 body {
     background-color:black;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
 }
 
 .deleteNote {
@@ -21,10 +22,15 @@ h4 {
     color: #e02826;
 }
 
+.home {
+    text-align: center;
+    color: white;
+    font-size: 14pt;
+}
+
 #scrape {
     margin: 22px 0px;
     font-size: 14pt;
-    float: right;
     font-family: 'Roboto Slab', serif;
     color: white;
     background-color: #e02826;
@@ -39,7 +45,7 @@ h4 {
     font-size: 32pt;
     color: white;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     font-family: 'Roboto Slab', serif;
 }
 
@@ -54,14 +60,14 @@ h4 {
     line-height: 350px;
     text-align: center;
     margin-top: 80px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 header {
     position: fixed;
     top: 0;
     left: 0;
-    background-image: url("/assets/img/black80px.png");
+    background-image: url("/assets/img/black80pxTrans.png");
     background-repeat: repeat-x;
     background-position: top;
     height: 155px;
@@ -107,6 +113,7 @@ header {
 #rightMenu {
     position: relative;
     float: right;
+    text-align: right;
     line-height: 80px;
     font-size: 14pt;
 }

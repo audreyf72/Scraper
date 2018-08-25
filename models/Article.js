@@ -1,3 +1,4 @@
+console.log('running article.js');
 // Require mongoose
 var mongoose = require("mongoose");
 var Note = require("./Note");

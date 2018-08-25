@@ -1,6 +1,6 @@
 <!--Homepage-->
 <div class="container">
-    <div class="pageTitle">Current Articles</div>
+    <div class="pageTitle">Scraped Articles</div>
     <div class="col-md-12">
         {{#if article}}
             {{#each article}}
@@ -10,7 +10,8 @@
                 </div>
                 <div class="panel-body">
                     <p> {{this.summary}}</p>
-                    <a href={{this.link}} target="_blank">{{this.link}}</a>
+                    <span>Article link:
+                    <a href={{this.link}} target="_blank">{{this.link}}</a></span>
                     <br><br>
                     <!-- Button -->
                     <button type="button" class="btn btn-default save" data-id={{this._id}}>Save Article</button>
