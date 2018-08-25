@@ -90,11 +90,11 @@ app.get("/saved", function(req, res) {
 //GET route to scrape nytimes website
 app.get("/scrape", function(req, res) {
   
-  request("http://www.npr.org/sections/news/archive", function(error, response, html) {
+  request("https://www.npr.org/sections/news/", function(error, response, html) {
     
     var $ = cheerio.load(html);
     // Find all elements with an article tag
-    $("div.archivelist > article").each(function(i, element) {
+    $("div.list-overflow > article").each(function(i, element) {
 
       // Save an empty result object
       var result = {};
