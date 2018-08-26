@@ -1,7 +1,7 @@
 body {
     background-color:black;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 12pt;
+    font-size: 14pt;
 }
 
 .deleteNote {
@@ -15,7 +15,7 @@ body {
 }
 
 h4 {
-    font-size: 22px;
+    font-size: 20pt;
 }
 
 .panel a {
@@ -28,6 +28,24 @@ h4 {
     font-size: 14pt;
 }
 
+#nprLogo {
+    margin-top: 8%;
+    margin-bottom: 20px;
+}
+
+.homeColumn1 {
+    float: left;
+    width: 60%;
+    padding: 20px 20px 10px 30px;
+}
+
+.homeColumn2 {
+    float: left;
+    width: 40%;
+    padding: 10px 30px 15px 30px;
+    text-align: center;
+}
+
 #scrape {
     margin: 22px 0px;
     font-size: 14pt;
@@ -37,7 +55,54 @@ h4 {
     border: #fa302c solid 1px;
 }
 
+#scrape2 {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16pt;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    background-color: #e02826;
+    border: #fa302c solid 1px;
+}
+
+#scrape3 {
+    margin: 20px;
+    padding: 10px;
+    font-size: 18pt;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    background-color: #e02826;
+    border: #fa302c solid 1px;
+}
+
+#saveBtn {
+   width: 100%;
+   font-size: 14pt;
+   font-weight: bold;
+}
+
+#noteBtn {
+    width: 105px;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+#deleteBtn {
+    width: 105px;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+#saveNoteBtn {
+    font-size: 12pt;
+    font-weight: bold;
+}
+
 #scrape:hover {
+    background-color: #961c1a;
+}
+
+#scrape2:hover {
     background-color: #961c1a;
 }
 
@@ -47,6 +112,20 @@ h4 {
     text-align: center;
     margin-bottom: 15px;
     font-family: 'Roboto Slab', serif;
+}
+
+.scrapingTitle {
+    text-align: center;
+    font-size: 26pt;
+    line-height: 26pt;
+    font-family: 'Roboto Slab', serif;
+}
+
+.homepageTitle {
+    font-family: 'Roboto Slab', serif;
+    font-size: 32pt;
+    line-height: 32pt;
+    margin-bottom: 15px;
 }
 
 .mainContainer {
@@ -153,8 +232,32 @@ header {
     text-align: center;
 }
 
+.homeColumn1 {
+    float: none;
+    width: 100%;
+}
+
+.homeColumn2 {
+    float: none;
+    width: 100%;
+}
+
+#nprLogo {
+    margin-top: 0px;
+}
+
 #scrape {
     float: none;
+}
+
+#scrape2 {
+    float: none;
+    margin: 10px 0px;
+}
+
+#scrape3 {
+    float: none;
+    margin: 20px 0px;
 }
 
 #rightMenu {

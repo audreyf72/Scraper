@@ -6,15 +6,15 @@
             {{#each article}}
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4>{{this.title}}</h4>
+                    <h4><b>{{this.title}}</b></h4>
                 </div>
                 <div class="panel-body">
-                    <p> {{this.summary}}</p>
-                    <span>Article link:
-                    <a href={{this.link}} target="_blank">{{this.link}}</a></span>
+                    <p>{{this.summary}}</p>
+                    <span>Article link: 
+                    <i><a href={{this.link}} target="_blank">{{this.link}}</a></i></span>
                     <br><br>
                     <!-- Button -->
-                    <button type="button" class="btn btn-default save" data-id={{this._id}}>Save Article</button>
+                    <button type="button" class="btn btn-default save" id="saveBtn" data-id={{this._id}}>Save Article</button>
                 </div>
             </div>
             {{/each}}

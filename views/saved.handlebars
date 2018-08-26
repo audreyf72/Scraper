@@ -14,8 +14,8 @@
                         <span>Article link:
                         <a href={{this.link}} target="_blank">{{this.link}}</a></span>
                         <br><br>
-                        <button type="button" class="btn btn-default addNote" data-toggle="modal" data-target="#noteModal{{this._id}}" data-id={{this._id}}>Comment</button>
-                        <button type="button" class="btn btn-danger delete" data-id={{this._id}}>Delete</button>
+                        <button type="button" class="btn btn-default addNote" id="noteBtn" data-toggle="modal" data-target="#noteModal{{this._id}}" data-id={{this._id}}>Comment</button>
+                        <button type="button" class="btn btn-danger delete" id="deleteBtn" data-id={{this._id}}>Delete</button>
                     </div>
                 </div>
             {{/each}}

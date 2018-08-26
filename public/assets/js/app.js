@@ -1,11 +1,31 @@
-//Scrape button
+//Scrape buttons
 $("#scrape").on("click", function() {
     $.ajax({
         method: "GET",
         url: "/scrape"
     }).done(function(data) {
         console.log(data)
-        window.location = "/"
+        window.location = "/home"
+    })
+});
+
+$("#scrape2").on("click", function() {
+    $.ajax({
+        method: "GET",
+        url: "/scrape"
+    }).done(function(data) {
+        console.log(data)
+        window.location = "/home"
+    })
+});
+
+$("#scrape3").on("click", function() {
+    $.ajax({
+        method: "GET",
+        url: "/scrape"
+    }).done(function(data) {
+        console.log(data)
+        window.location = "/home"
     })
 });
 

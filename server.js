@@ -15,7 +15,7 @@ var request = require("request");
 var cheerio = require("cheerio");
 
 // If deployed, use the deployed database. Otherwise use the local mongoScraper database
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/nprScraper";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/nprScraper5";
 
 // Set mongoose to leverage built in JavaScript ES6 Promises
 // Connect to the Mongo DB
@@ -63,11 +63,13 @@ db.once("open", function() {
   console.log("Mongoose connection successful.");
 });
 
-
-
 // Routes
 //GET requests to render Handlebars pages
-app.get("/", function(req, res) {
+app.get('/', function(req, res) {
+  res.render('new');
+});
+
+app.get("/home", function(req, res) {
   //execute callback limit 20 articles in homepage (ref mongoose query builder)
   Article.find({"saved": false}).limit(20).exec(function(error, data) {
     var hbsObject = {
@@ -95,7 +97,7 @@ app.get("/scrape", function(req, res) {
     var $ = cheerio.load(html);
     // Find all elements with an article tag
     $("div.list-overflow > article").each(function(i, element) {
-
+    $('time').remove();
       // Save an empty result object
       var result = {};
 
