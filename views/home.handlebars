@@ -20,8 +20,9 @@
             {{/each}}
         {{else}}
         <div class="panel panel-default">
-            <div class="panel-body">
-            <h4>Sorry, it looks like we don't have any new articles.</h4>
+            <div class="panel-body" id="centered">
+            <h4 align="center">Sorry, it looks like we don't have any scraped articles. Scrape for new articles!</h4>
+            <button type="button" class="scrape" id="scrapeBig">Scrape Articles</button>
             </div>
          </div>
         {{/if}}

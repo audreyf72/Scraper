@@ -1,4 +1,4 @@
-console.log('inside server.js');
+console.log('running server.js');
 // Dependencies
 var express = require("express");
 var bodyParser = require("body-parser");
@@ -15,7 +15,7 @@ var request = require("request");
 var cheerio = require("cheerio");
 
 // If deployed, use the deployed database. Otherwise use the local mongoScraper database
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/nprScraper5";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/nprScraper1";
 
 // Set mongoose to leverage built in JavaScript ES6 Promises
 // Connect to the Mongo DB
@@ -50,9 +50,6 @@ app.engine("handlebars", exphbs({
 }));
 app.set("view engine", "handlebars");
 
-
-
-
 // Show any mongoose errors
 db.on("error", function(error) {
   console.log("Mongoose Error: ", error);
@@ -86,6 +83,14 @@ app.get("/saved", function(req, res) {
       article: articles
     };
     res.render("saved", hbsObject);
+  });
+});
+
+// Clear the database to bring in an updated list
+app.get("/empty", (req, res) => {
+  db.collection('articles').deleteMany({ 'saved' : false }, function(err, obj) {
+    if (err) throw err;
+    res.send(obj.result.n + " articles removed.");
   });
 });
 

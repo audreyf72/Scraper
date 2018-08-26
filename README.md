@@ -1,10 +1,10 @@
 # Newscrape || NPR News Scraper
 
-All the news you want, only when you want it. Newscrape will collect the latest news articles from the NPR (National Public Radio) News website, www.NPR.org, and display a Headline, Summary and Link for each article.
-            
-By clicking on the button below each article you can move that article to the Saved Articles page. From there you can comment on the article, delete comments, or delete the saved article from the saved article page.
+All the news you want, only when you want it. Newscrape will scrape to collect the latest news articles from the NPR (National Public Radio) News website, www.NPR.org, and display a Headline, Summary and Link for each article.
 
-NPR delivers breaking national and world news. Also top stories from business, politics, health, science, technology, music, arts and culture.
+Articles will be stored on the scraped articles page until you click the "Delete Articles" button. This will clear the scraped articles page to make room for new articles when you click the "Scrape Articles" button. Clicking the "Save Article" button below each article will move that article to the Saved Articles page.
+
+Saved articles will be saved even when you delete the Scraped Articles. The Saved Articles page will let you comment on the article, delete comments, or remove the saved article from the saved article page.
 
 ## Technologies Used
 
@@ -32,6 +32,10 @@ NPM Package Requirements
 ### Scraped Articles Page
 
 ![Mobile Size](/screenshots/scraped.png)
+
+### Deleted Articles View
+
+![Mobile Size](/screenshots/deleted.png)
 
 ### Saved Articles Page
 

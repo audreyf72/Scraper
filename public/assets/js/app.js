@@ -1,5 +1,5 @@
 //Scrape buttons
-$("#scrape").on("click", function() {
+$(".scrape").on("click", function() {
     $.ajax({
         method: "GET",
         url: "/scrape"
@@ -9,20 +9,10 @@ $("#scrape").on("click", function() {
     })
 });
 
-$("#scrape2").on("click", function() {
+$("#empty").on("click", function() {
     $.ajax({
         method: "GET",
-        url: "/scrape"
-    }).done(function(data) {
-        console.log(data)
-        window.location = "/home"
-    })
-});
-
-$("#scrape3").on("click", function() {
-    $.ajax({
-        method: "GET",
-        url: "/scrape"
+        url: "/empty"
     }).done(function(data) {
         console.log(data)
         window.location = "/home"
