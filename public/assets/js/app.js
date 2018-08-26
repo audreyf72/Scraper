@@ -9,7 +9,7 @@ $(".scrape").on("click", function() {
     })
 });
 
-$("#empty").on("click", function() {
+$(".empty").on("click", function() {
     $.ajax({
         method: "GET",
         url: "/empty"
