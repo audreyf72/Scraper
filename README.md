@@ -1,3 +1,5 @@
+You can check out the deployed site on Heroku [here](https://hidden-stream-86113.herokuapp.com/)!
+
 # Newscrape || NPR News Scraper
 
 All the news you want, only when you want it. Newscrape will scrape to collect the latest news articles from the NPR (National Public Radio) News website, www.NPR.org, and display a Headline, Summary and Link for each article.
