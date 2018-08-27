@@ -38,8 +38,8 @@ h4 {
 }
 
 #nprLogo {
-    margin-top: 45px;
-    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 8px;
 }
 
 .homeColumn1 {
@@ -63,7 +63,7 @@ h4 {
     color: white;
     background-color: #e02826;
     border: #fa302c solid 1px;
-    line-height: 1.42857143;
+    line-height: 175%;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
@@ -87,7 +87,7 @@ h4 {
     color: white;
     background-color: #4e84c4;
     border: #0347bb solid 1px;
-    line-height: 1.42857143;
+    line-height: 175%;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
@@ -123,8 +123,8 @@ h4 {
     background-color: #961c1a;
 }
 
-#empty:hover {
-    background-color: #0347bb;
+.empty:hover {
+    background-color: #02307e;
 }
 
 .pageHeader {
@@ -157,7 +157,7 @@ h4 {
     color: #e02826;
     font-size: 32pt;
     line-height: 32pt;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
     font-weight: bold;
 }
 
