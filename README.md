@@ -2,7 +2,7 @@ You can check out the deployed site on Heroku [here](https://hidden-stream-86113
 
 # Newscrape || NPR News Scraper
 
-All the news you want, only when you want it. Newscrape will use the Cheerio NPM to scrape and collect the latest news articles from the NPR News website, [www.NPR.org](https://www.npr.org/sections/news/)!, then display a Headline, Summary and Link for each article.
+All the news you want, only when you want it. Newscrape will use the Cheerio NPM to scrape and collect the latest news articles from the NPR News website, [www.NPR.org](https://www.npr.org/sections/news/), then display a Headline, Summary and Link for each article.
 
 Articles will be stored on the Scraped Articles page until you click the "Delete Articles" button. This will clear the Scraped Articles page to make room for new articles when you click the "Scrape Articles" button. Clicking the "Save Article" button below each article will move that article to the Saved Articles page.
 
