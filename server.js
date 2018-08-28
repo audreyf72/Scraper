@@ -66,14 +66,14 @@ app.get('/', function (req, res) {
   res.render('new');
 });
 
-app.get("/home", function (req, res) {
+app.get("/unsaved", function (req, res) {
   //execute callback limit 20 articles in homepage (ref mongoose query builder)
   Article.find({ "saved": false }).limit(20).exec(function (error, data) {
     var hbsObject = {
       article: data
     };
     console.log(hbsObject);
-    res.render("home", hbsObject);
+    res.render("unsaved", hbsObject);
   });
 });
 

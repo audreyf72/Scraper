@@ -5,7 +5,7 @@ $(".scrape").on("click", function () {
         url: "/scrape"
     }).done(function (data) {
         console.log(data)
-        window.location = "/home"
+        window.location = "/unsaved"
     })
 });
 
@@ -15,13 +15,13 @@ $(".empty").on("click", function () {
         url: "/empty"
     }).done(function (data) {
         console.log(data)
-        window.location = "/home"
+        window.location = "/unsaved"
     })
 });
 
 //Set clicked nav option to active
 $("#leftMenu a").click(function () {
-    $("#leftMenu a").removeClass("active");
+    //$("#leftMenu a").removeClass("active");
     $(this).addClass("active");
 });
 

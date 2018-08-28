@@ -18,6 +18,15 @@ h4 {
     font-size: 20pt;
 }
 
+.whiteType {
+    color: white;
+    text-align: center;
+}
+
+.col-md-12 {
+    margin-top: 20px;
+} 
+
 .panel a {
     color: #e02826;
 }
@@ -138,7 +147,6 @@ h4 {
 
 .pageTitle {
     font-size: 30pt;
-    margin-bottom: 15px;
     color: white;
     text-align: center;
     font-family: 'Roboto Slab', serif;
@@ -217,8 +225,10 @@ header {
     border-bottom: #e02826 10px solid;
 }
 
-.active {
-   border-bottom: #e02826 10px solid;
+#leftMenu a:active {
+    color: #e02826;
+    text-decoration: none;
+    border-bottom: #e02826 10px solid;
 }
 
 #rightMenu {
